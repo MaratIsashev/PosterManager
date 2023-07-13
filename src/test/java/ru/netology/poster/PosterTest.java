@@ -15,6 +15,7 @@ public class PosterTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void addFew() {
         Poster poster = new Poster();
@@ -27,6 +28,7 @@ public class PosterTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void addNothing() {
         Poster poster = new Poster();
@@ -36,6 +38,7 @@ public class PosterTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void findLast10From3() {
         Poster poster = new Poster();
@@ -48,6 +51,7 @@ public class PosterTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void findLast10From11() {
         Poster poster = new Poster();
@@ -64,10 +68,11 @@ public class PosterTest {
         poster.add("poster11");
 
         String[] actual = poster.findLast();
-        String[] expected = {"poster11", "poster10", "poster9","poster8","poster7","poster6","poster5","poster4","poster3","poster2"};
+        String[] expected = {"poster11", "poster10", "poster9", "poster8", "poster7", "poster6", "poster5", "poster4", "poster3", "poster2"};
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void findLast5From11() {
         Poster poster = new Poster(5);
@@ -84,10 +89,11 @@ public class PosterTest {
         poster.add("poster11");
 
         String[] actual = poster.findLast();
-        String[] expected = {"poster11","poster10","poster9","poster8","poster7"};
+        String[] expected = {"poster11", "poster10", "poster9", "poster8", "poster7"};
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void findLast11From11() {
         Poster poster = new Poster(11);
@@ -104,7 +110,7 @@ public class PosterTest {
         poster.add("poster11");
 
         String[] actual = poster.findLast();
-        String[] expected = {"poster11", "poster10", "poster9","poster8","poster7","poster6","poster5","poster4","poster3","poster2","poster1"};
+        String[] expected = {"poster11", "poster10", "poster9", "poster8", "poster7", "poster6", "poster5", "poster4", "poster3", "poster2", "poster1"};
 
         Assertions.assertArrayEquals(expected, actual);
     }
